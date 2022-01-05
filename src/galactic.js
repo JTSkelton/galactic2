@@ -3,6 +3,11 @@ export default class Cosmic {
     this.name = name;
     this.age = age;
     this.life = lifeExpect;
+    this.mercuryAge = 0;
+  }
+
+  convertMercury() {
+    this.mercuryAge = Math.floor(this.age / 0.24);
   }
 
   convertMercuryAge() {
