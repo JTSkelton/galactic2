@@ -27,8 +27,8 @@ describe("Cosmic Age Test", () => {
     expect(person.convertJupiterAge()).toEqual(2);
   });
 
-  test("should correctly calcualte life expectancy on each planet", () => {
+  test("should correctly calcualte years left to live on each planet", () => {
     const person = new Cosmic("Jack", 31, 70);
-    expect(person.lifeExpectancy()).toEqual([291, 112, 37, 5]);
+    expect(person.lifeExpectancy()).toEqual([162, 62, 21, -124]);
   });
 });

@@ -27,10 +27,10 @@ export default class Cosmic {
 
   lifeExpectancy() {
     let lifeEx = [];
-    lifeEx.push(Math.floor(this.life / 0.24) - this.age);
-    lifeEx.push(Math.floor(this.life / 0.62) - this.age);
-    lifeEx.push(Math.floor(this.life / 1.88) - this.age);
-    lifeEx.push(Math.floor(this.life / 11.86) - this.age);
+    lifeEx.push(Math.floor(this.life / 0.24) - Math.floor(this.age / 0.24));
+    lifeEx.push(Math.floor(this.life / 0.62) - Math.floor(this.age / 0.62));
+    lifeEx.push(Math.floor(this.life / 1.88) - Math.floor(this.age / 1.88));
+    lifeEx.push(Math.floor(this.life / 11.86) - Math.floor(this.age / 0.24));
     return lifeEx;
   }
 }
