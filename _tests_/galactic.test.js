@@ -23,26 +23,6 @@ describe("Cosmic Age Test", () => {
     );
   });
 
-  test("should correctly calcualte Mercury age", () => {
-    const person = new Cosmic("Jack", 31);
-    expect(person.convertMercuryAge()).toEqual(129);
-  });
-
-  test("should correctly calcualte Venus age", () => {
-    const person = new Cosmic("Jack", 31);
-    expect(person.convertVenusAge()).toEqual(50);
-  });
-
-  test("should correctly calcualte Mars age", () => {
-    const person = new Cosmic("Jack", 31);
-    expect(person.convertMarsAge()).toEqual(16);
-  });
-
-  test("should correctly calcualte Jupiter age", () => {
-    const person = new Cosmic("Jack", 31);
-    expect(person.convertJupiterAge()).toEqual(2);
-  });
-
   test("should correctly calcualte years left to live on each planet", () => {
     const person = new Cosmic("Jack", 31, 70);
     expect(person.lifeExpectancy()).toEqual([162, 62, 21, 3]);
