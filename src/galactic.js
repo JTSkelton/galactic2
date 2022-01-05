@@ -21,14 +21,10 @@ export default class Cosmic {
   }
 
   lifeExpectancy() {
-    this.mercuryYearsLeft =
-      Math.floor(this.life / 0.24) - Math.floor(this.age / 0.24);
-    this.venusYearsLeft =
-      Math.floor(this.life / 0.62) - Math.floor(this.age / 0.62);
-    this.marsYearsLeft =
-      Math.floor(this.life / 1.88) - Math.floor(this.age / 1.88);
-    this.jupiterYearsLeft =
-      Math.floor(this.life / 11.86) - Math.floor(this.age / 11.86);
+    this.mercuryYearsLeft = Math.floor(this.life / 0.24 - this.age / 0.24);
+    this.venusYearsLeft = Math.floor(this.life / 0.62 - this.age / 0.62);
+    this.marsYearsLeft = Math.floor(this.life / 1.88 - this.age / 1.88);
+    this.jupiterYearsLeft = Math.floor(this.life / 11.86 - this.age / 11.86);
   }
 
   // extraLife() {

@@ -33,7 +33,7 @@ describe("Cosmic Age Test", () => {
         life: 70,
         mercuryYearsLeft: 162,
         venusYearsLeft: 62,
-        marsYearsLeft: 21,
+        marsYearsLeft: 20,
         jupiterYearsLeft: 3,
       })
     );
