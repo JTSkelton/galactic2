@@ -1,7 +1,8 @@
 export default class Cosmic {
-  constructor(name, age) {
+  constructor(name, age, lifeExpect) {
     this.name = name;
     this.age = age;
+    this.life = lifeExpect;
   }
 
   convertMercuryAge() {
@@ -22,5 +23,14 @@ export default class Cosmic {
   convertJupiterAge() {
     let jupiterAge = Math.floor(this.age / 11.86);
     return jupiterAge;
+  }
+
+  lifeExpectancy() {
+    let lifeEx = [];
+    lifeEx.push(Math.floor(this.life / 0.24));
+    lifeEx.push(Math.floor(this.life / 0.62));
+    lifeEx.push(Math.floor(this.life / 1.88));
+    lifeEx.push(Math.floor(this.life / 11.86));
+    return lifeEx;
   }
 }
