@@ -4,10 +4,16 @@ export default class Cosmic {
     this.age = age;
     this.life = lifeExpect;
     this.mercuryAge = 0;
+    this.venusAge = 0;
+    this.marsAge = 0;
+    this.jupiterAge = 0;
   }
 
   convertPlanetAges() {
     this.mercuryAge = Math.floor(this.age / 0.24);
+    this.venusAge = Math.floor(this.age / 0.62);
+    this.marsAge = Math.floor(this.age / 1.88);
+    this.jupiterAge = Math.floor(this.age / 11.86);
   }
 
   convertMercuryAge() {
