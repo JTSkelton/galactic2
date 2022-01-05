@@ -23,6 +23,8 @@ export default class Cosmic {
     return marsAge;
   }
 
-
-  //   this.jupiterAge = Math.floor(this.age / 11.86);
+  convertJupiterAge() {
+    let jupiterAge = Math.floor(this.age / 11.86);
+    return jupiterAge;
+  }
 }
