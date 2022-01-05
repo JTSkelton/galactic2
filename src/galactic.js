@@ -2,10 +2,6 @@ export default class Cosmic {
   constructor(name, age) {
     this.name = name;
     this.age = age;
-    this.mercuryAge;
-    this.venusAge;
-    this.marsAge;
-    this.jupiterAge;
   }
 
   convertMercuryAge() {
