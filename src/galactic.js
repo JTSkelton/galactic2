@@ -13,7 +13,11 @@ export default class Cosmic {
     return mercuryAge;
   }
 
-  // this.venusAge = Math.floor(this.age / 0.62);
+  convertVenusAge() {
+    let venusAge = Math.floor(this.age / 0.62);
+    return venusAge;
+  }
+
   //   this.mercuryAge = Math.floor(this.age / 0.24);
   //   this.jupiterAge = Math.floor(this.age / 11.86);
 }
