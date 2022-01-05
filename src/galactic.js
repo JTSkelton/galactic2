@@ -33,4 +33,14 @@ export default class Cosmic {
     lifeEx.push(Math.floor(this.life / 11.86) - Math.floor(this.age / 11.86));
     return lifeEx;
   }
+
+  // extraLife() {
+  //   let extraLife = [];
+  //   extraLife.push(Math.floor(this.life / 0.24) - Math.floor(this.age / 0.24));
+  //   extraLife.push(Math.floor(this.life / 0.62) - Math.floor(this.age / 0.62));
+  //   extraLife.push(Math.floor(this.life / 1.88) - Math.floor(this.age / 1.88));
+  //   extraLife.push(Math.floor(this.life / 11.86) - Math.floor(this.age / 11.86));
+  //   let extraLifeFilter = extraLife.filter(element => element > 0).forEach((element) => element * -1);
+  //   return extraLifeFilter;
+  // }
 }

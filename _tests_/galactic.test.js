@@ -7,6 +7,17 @@ describe("Cosmic Age Test", () => {
     expect(person.age).toEqual(31);
   });
 
+  test("should correctly create a Cosmic object with name and age", () => {
+    const person = new Cosmic("Jack", 31, 70);
+    expect(person).toEqual(
+      expect.objectContaining({
+        name: "Jack",
+        age: 31,
+        life: 70,
+      })
+    );
+  });
+
   test("should correctly calcualte Mercury age", () => {
     const person = new Cosmic("Jack", 31);
     expect(person.convertMercuryAge()).toEqual(129);
