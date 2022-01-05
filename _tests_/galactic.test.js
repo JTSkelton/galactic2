@@ -7,11 +7,12 @@ describe("Cosmic Age Test", () => {
     expect(person.age).toEqual(31);
   });
 
-  test("should correctly calcualte planet ages and store them in object", () => {
+  test("should correctly calcualte Mercury age", () => {
     const person = new Cosmic("Jack", 31);
     expect(person.convertMercuryAge()).toEqual(129);
-    // expect(person.convertAge()).toEqual(50);
+  });
+
+   // expect(person.convertAge()).toEqual(50);
     // expect(person.convertAge()).toEqual(16);
     // expect(person.convertAge()).toEqual(2);
-  });
 });
