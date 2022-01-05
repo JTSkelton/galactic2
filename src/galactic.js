@@ -3,10 +3,14 @@ export default class Cosmic {
     this.name = name;
     this.age = age;
     this.life = lifeExpect;
-    this.mercuryAge = 0;
-    this.venusAge = 0;
-    this.marsAge = 0;
-    this.jupiterAge = 0;
+    this.mercuryAge;
+    this.venusAge;
+    this.marsAge;
+    this.jupiterAge;
+    this.mercuryYearsLeft;
+    this.venusYearsLeft;
+    this.marsYearsLeft;
+    this.jupiterYearsLeft;
   }
 
   convertPlanetAges() {
@@ -17,12 +21,14 @@ export default class Cosmic {
   }
 
   lifeExpectancy() {
-    let lifeEx = [];
-    lifeEx.push(Math.floor(this.life / 0.24) - Math.floor(this.age / 0.24));
-    lifeEx.push(Math.floor(this.life / 0.62) - Math.floor(this.age / 0.62));
-    lifeEx.push(Math.floor(this.life / 1.88) - Math.floor(this.age / 1.88));
-    lifeEx.push(Math.floor(this.life / 11.86) - Math.floor(this.age / 11.86));
-    return lifeEx;
+    this.mercuryYearsLeft =
+      Math.floor(this.life / 0.24) - Math.floor(this.age / 0.24);
+    this.venusYearsLeft =
+      Math.floor(this.life / 0.62) - Math.floor(this.age / 0.62);
+    this.marsYearsLeft =
+      Math.floor(this.life / 1.88) - Math.floor(this.age / 1.88);
+    this.jupiterYearsLeft =
+      Math.floor(this.life / 11.86) - Math.floor(this.age / 11.86);
   }
 
   // extraLife() {

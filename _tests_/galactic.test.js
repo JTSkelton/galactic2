@@ -25,6 +25,17 @@ describe("Cosmic Age Test", () => {
 
   test("should correctly calcualte years left to live on each planet", () => {
     const person = new Cosmic("Jack", 31, 70);
-    expect(person.lifeExpectancy()).toEqual([162, 62, 21, 3]);
+    person.lifeExpectancy();
+    expect(person).toEqual(
+      expect.objectContaining({
+        name: "Jack",
+        age: 31,
+        life: 70,
+        mercuryYearsLeft: 162,
+        venusYearsLeft: 62,
+        marsYearsLeft: 21,
+        jupiterYearsLeft: 3,
+      })
+    );
   });
 });
