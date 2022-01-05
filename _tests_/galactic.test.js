@@ -12,15 +12,18 @@ describe("Cosmic Age Test", () => {
     expect(person.convertMercuryAge()).toEqual(129);
   });
 
-  test("should correctly calcualte Mercury age", () => {
+  test("should correctly calcualte Venus age", () => {
     const person = new Cosmic("Jack", 31);
     expect(person.convertVenusAge()).toEqual(50);
   });
 
-  test("should correctly calcualte Mercury age", () => {
+  test("should correctly calcualte Mars age", () => {
     const person = new Cosmic("Jack", 31);
     expect(person.convertMarsAge()).toEqual(16);
   });
-  
-    // expect(person.convertAge()).toEqual(2);
+
+  test("should correctly calcualte Jupiter age", () => {
+    const person = new Cosmic("Jack", 31);
+    expect(person.convertJupiterAge()).toEqual(2);
+  });
 });
