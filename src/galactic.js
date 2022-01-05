@@ -30,7 +30,7 @@ export default class Cosmic {
     lifeEx.push(Math.floor(this.life / 0.24) - Math.floor(this.age / 0.24));
     lifeEx.push(Math.floor(this.life / 0.62) - Math.floor(this.age / 0.62));
     lifeEx.push(Math.floor(this.life / 1.88) - Math.floor(this.age / 1.88));
-    lifeEx.push(Math.floor(this.life / 11.86) - Math.floor(this.age / 0.24));
+    lifeEx.push(Math.floor(this.life / 11.86) - Math.floor(this.age / 11.86));
     return lifeEx;
   }
 }
