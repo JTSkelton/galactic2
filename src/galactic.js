@@ -6,7 +6,7 @@ export default class Cosmic {
     this.mercuryAge = 0;
   }
 
-  convertMercury() {
+  convertPlanetAges() {
     this.mercuryAge = Math.floor(this.age / 0.24);
   }
 

@@ -7,15 +7,18 @@ describe("Cosmic Age Test", () => {
     expect(person.age).toEqual(31);
   });
 
-  test("should correctly create a Cosmic object with the this.mercuryAge changed from 0 to 129", () => {
+  test("should correctly create a Cosmic object and run convertPlanetAges() to add planet ages to object", () => {
     const person = new Cosmic("Jack", 31, 70);
-    person.convertMercury();
+    person.convertPlanetAges();
     expect(person).toEqual(
       expect.objectContaining({
         name: "Jack",
         age: 31,
         life: 70,
         mercuryAge: 129,
+        venusAge: 50,
+        marsAge: 16,
+        jupiterAge: 2,
       })
     );
   });
