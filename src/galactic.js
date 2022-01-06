@@ -3,14 +3,6 @@ export default class Cosmic {
     this.name = name;
     this.age = age;
     this.life = lifeExpect;
-    this.mercuryAge;
-    this.venusAge;
-    this.marsAge;
-    this.jupiterAge;
-    this.mercuryYearsLeft;
-    this.venusYearsLeft;
-    this.marsYearsLeft;
-    this.jupiterYearsLeft;
   }
 
   convertPlanetAges() {
