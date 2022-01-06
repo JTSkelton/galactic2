@@ -38,4 +38,24 @@ describe("Cosmic Age Test", () => {
       })
     );
   });
+
+  test("should correctly calcualte years lived past life expectancy on each planet", () => {
+    const person = new Cosmic("Jack", 71, 70);
+    person.extraLife();
+    expect(person).toEqual(
+      expect.objectContaining({
+        name: "Jack",
+        age: 71,
+        life: 70,
+        mercuryYearsLeft: -5,
+        venusYearsLeft: -2,
+        marsYearsLeft: -1,
+        jupiterYearsLeft: -1,
+        mercuryYearsPast: 5,
+        venusYearsPast: 2,
+        marsYearsPast: 1,
+        jupiterYearsPast: 1,
+      })
+    );
+  });
 });
